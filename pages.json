@@ -20,13 +20,6 @@
 			}
 		},
 		{
-			"path" : "pages/receiveRecode/receiveRecode",
-			"style" :
-			{
-				"navigationBarTitleText" : ""
-			}
-		},
-		{
 			"path" : "pages/adv/adv",
 			"style" :
 			{
@@ -35,6 +28,13 @@
 		},
 		{
 			"path" : "pages/setMoney/setMoney",
+			"style" :
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/noticeList/noticeList",
 			"style" :
 			{
 				"navigationBarTitleText" : ""
