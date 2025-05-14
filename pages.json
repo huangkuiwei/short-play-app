@@ -27,6 +27,13 @@
 			}
 		},
 		{
+			"path" : "pages/adv2/adv2",
+			"style" :
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
 			"path" : "pages/setMoney/setMoney",
 			"style" :
 			{
