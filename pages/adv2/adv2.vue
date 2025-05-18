@@ -34,13 +34,17 @@ export default {
     }
 
     this.advList = []
+    let names = ['八零恋歌', '从不负月光', '反方向的钟', '烽火长祭慎行殇', '侯门嫡女骆宁传', '换专业后山海不相逢', '荒年全村啃树皮', '季总您的马甲叒掉了',
+      '家里家外', '假千金翻身富豪', '今夕是何年', '请君入我怀', '全家偷听我心声我负责喝奶', '撒娇大叔最好命', '上错嫁车嫁对郎', '谁在说朕坏话', '深宅胭脂谋',
+      '乡下千金竟是老祖', '小小厨娘不好惹', '医妃卿卿', '重生带着妻儿走向致富路', '重生后她飒爆了', '重生文女配只想活命', '重生之为儿媳撑腰'
+    ]
 
-    new Array(9).fill(undefined).forEach((item, index) => {
+    new Array(24).fill(undefined).forEach((item, index) => {
       let moneyData = uni.getStorageSync('moneyData')[3]
       let money = Number(moneyData.minMoney) + Math.random() * (moneyData.maxMoney - moneyData.minMoney)
 
       this.advList.push({
-        name: index + 1,
+        name: names[index],
         videoSrc: `/static/videos/${index + 1}.mp4`,
         coverSrc: `/static/images/cover/${index + 1}.jpg`,
         money: money.toFixed(2),
@@ -166,7 +170,7 @@ export default {
         </view>
 
         <view class="tip">
-          <text class="name">短剧：短剧名称短剧名称短剧名称短剧名称</text>
+          <text class="name">短剧：{{ item.name }}</text>
           <text class="btn">观看赚收益</text>
           <view class="progress" :style="{ width: item.progress + '%' }">
             {{ item.progress }}%

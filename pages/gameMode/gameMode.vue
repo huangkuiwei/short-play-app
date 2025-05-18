@@ -2,9 +2,9 @@
   <view class="game-mode-page">
     <view class="select" v-if="requestSuccess">
       <view>请选择游戏模式</view>
-      <button type="primary" @click="jumpUrl('/pages/adv/adv')">看视频得收益</button>
-      <button type="primary" @click="jumpUrl('/pages/adv2/adv2')">看视频得2收益</button>
-      <button type="primary" @click="jumpUrl('/pages/setMoney/setMoney')">设置金额</button>
+      <button type="primary" @click="jumpUrl('/pages/adv2/adv2')">看视频得收益1</button>
+      <button type="primary" @click="jumpUrl('/pages/adv/adv')">看视频得收益2</button>
+      <!--<button type="primary" @click="jumpUrl('/pages/setMoney/setMoney')">设置金额</button>-->
     </view>
   </view>
 </template>
